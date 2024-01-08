@@ -44,7 +44,7 @@ exports.logIn=async(request,response)=>{
     try{
         const {email,password}=request.body;
         const user=await userServices.getUserbyemail(email);
-        if(!user)return response.status(409).json('User doesnt exists');
+        if(!user)return response.status(404).json('User doesnt exists');
         const isPasswordValid = await bcrypt.compare(password, user.password);
         if (isPasswordValid) {
             const token = jwt.sign({ userId: user.id }, process.env.SECRETE_KEY, { expiresIn: '1h' });

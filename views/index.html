@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="../public/images/logo2_1.jpg" type="image/x-icon">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../public/css/main.css">
+  <title>chatPlus</title>
+</head>
+<body>
+  <nav class="flex items-center justify-between flex-wrap  p-5 -mt-1" id="nav">
+    <div class="flex items-center flex-shrink-0 text-white mr-6">
+    <img class="fill-current h-11 w-11 mr-2 rounded-lg" src="../public/images/logo2_1.jpg" alt="">
+      <span class="font-semibold text-2xl tracking-tight">ChatPlus</span>
+    </div>
+    <div class="w-full block  lg:flex lg:items-center lg:w-auto">
+      <div class="text-lg tracking-wider font-light lg:flex-grow">
+        
+      <button id="dropdownDividerButton" data-dropdown-toggle="dropdownDivider" class="" type="button">
+        <i class="fa-solid fa-circle-user fa-xl" style="color: #be22aa;"></i>
+      </button>
+    <!-- Dropdown menu -->
+      <div id="dropdownDivider" class=" z-10 hidden bg-white divide-y divide-black-900 rounded-lg shadow w-28">
+          <ul class="py-2 text-sm text-black " aria-labelledby="dropdownDividerButton">
+            <li>
+              <a href="#" class="block px-4 py-1 font-normal hover:bg-purple-200 ">Profile</a>
+            </li>
+            <li>
+              <a href="#" class="block px-4 py-1 font-normal hover:bg-purple-200 ">Settings</a>
+            </li>
+          </ul>
+          <div class="py-1">
+            <a href="#" class="block px-4 py-2 text-sm font-normal text-black hover:bg-purple-200">Log Out</a>
+          </div>
+      </div>
+    
+  
+        
+        
+      </div>
+    </div>
+  </nav>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
+</body>
+</html>
